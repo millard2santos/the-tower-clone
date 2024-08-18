@@ -1,0 +1,1 @@
+export type EnemyType = "basic" | "fast" | "boss" | "tank" | "ranged"
