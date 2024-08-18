@@ -11,7 +11,7 @@ type PlayerContextType = {
 const playerContext = createContext<PlayerContextType | null>(null)
 
 export const PlayerContext = ({ children }: { children: React.ReactNode }) => {
-    const [player, setPlayer] = useState(new Player)
+    const [player, setPlayer] = useState(new Player())
     const playerRef = useRef(player); // Ref para mantener la referencia al `player`
 
 

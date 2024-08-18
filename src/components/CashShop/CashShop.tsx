@@ -1,12 +1,14 @@
 import { useState } from "react"
 import styles from "./cashShop.module.css"
+import type { Player } from "../../entities/Player"
 
-type Props = {}
+type Props = {
+    player : Player
+}
+ 
 
 
-
-const CashShop = (props: Props) => {
-    
+const CashShop = ({player}: Props) => {
     const [section, setSection] = useState<"attack" | "defense" | "utility">("attack")
     return (
         <aside className={styles.window} >
